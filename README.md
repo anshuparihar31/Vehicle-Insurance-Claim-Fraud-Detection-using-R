@@ -92,6 +92,43 @@ Vehicle insurance fraud occurs when individuals collaborate to deceive or overst
 ## 🖥️ Shiny App  
 A **Shiny app** was developed to predict whether an insurance claim is **Fraudulent** or **Not Fraudulent** using the **14 common features**. The app utilizes the **Random Forest model**, achieving **high accuracy and AUC value of 0.959**.  
 
+## 🔹 How It Works?
+### 📝 User Inputs Claim Details  
+The app provides an interactive form where users enter details such as:  
+- **Vehicle Age**  
+- **Policy Number**  
+- **Claim Amount**  
+- **Driver Rating**  
+- **Policy State**  
+- **Month of Claim**  
+- **Days to Claim Reporting**  
+- **Accident Severity**  
+- **Make of the Vehicle**  
+- **Vehicle Price**  
+- **Age of Policyholder**  
+- **Past Claims**  
+- **Number of Witnesses**  
+- **Police Report Filed** (Yes/No)  
+ 
+
+### ⚡ Model Prediction  
+- The **Random Forest model** processes the inputs and predicts whether the claim is **fraudulent (1) or not (0)**.  
+
+### 📊 Results Visualization  
+- The app displays the **fraud probability** along with key **contributing factors**.  
+
+## 🔹 Technology Stack  
+
+- **Frontend:** Shiny (R-based UI framework)  
+- **Backend:** R (Machine Learning with `randomForest` and `glmnet`)  
+- **Data Handling:** `tidyverse`, `dplyr`, `caret`  
+- **Deployment:** Hosted on **ShinyApps.io**  
+
+### 🛠 **Shiny App Dependencies**  
+Ensure the following R packages are installed:  
+```sh
+install.packages(c("shiny", "randomForest", "shinythemes", "dplyr", "ggplot2", "caret", "ROSE"))
+```
 
 ## 🚀 Installation & Setup  
 
@@ -99,4 +136,5 @@ A **Shiny app** was developed to predict whether an insurance claim is **Fraudul
 ```sh
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
 ﻿
