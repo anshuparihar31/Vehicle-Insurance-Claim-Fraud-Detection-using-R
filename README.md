@@ -50,7 +50,48 @@ Vehicle insurance fraud occurs when individuals collaborate to deceive or overst
 ✔️ `lambda` values from **0.01 to 1** (controls regularization strength)  
 
 ### ✨ **Support Vector Machine (SVM)**  
-📌 **Hyperparameter:** `C = 1` (controls the balance between error minimization and model complexity)  
+📌 **Hyperparameter:** `C = 1` (controls the balance between error minimization and model complexity) 
+
+## 📊 Results  
+
+### **Classifier Accuracies Before Feature Selection:**  
+| Model              | Accuracy (%) |
+|--------------------|-------------|
+| Random Forest (RF) | **89.6%**    |
+| Decision Tree (DT) | 78.7%        |
+| Support Vector Machine (SVM) | 76.52%  |
+| Naïve Bayes       | 77.59%       |
+| Logistic Regression | 77.02%     |
+
+### **Accuracies After Feature Selection (Mutual Information - 17 features):**  
+| Model             | Accuracy (%) |
+|-------------------|-------------|
+| Random Forest    | **90.47%**    |
+| Decision Tree    | 80.33%        |
+
+### **Accuracies After Feature Selection (Mean Decrease Gini Impurity - 19 features):**  
+| Model            | Accuracy (%) |
+|------------------|-------------|
+| Random Forest   | **90.83%**    |
+| Decision Tree   | 79.98%        |
+| SVM             | 76.13%        |
+
+### **Accuracies Using 14 Common Features in the Shiny App:**  
+| Model           | Accuracy (%) |
+|----------------|-------------|
+| Random Forest  | **87.74%**   |
+| SVM           | 79.10%        |
+| Decision Tree  | 74.88%        |
+
+📌 **Best Model:** **Random Forest** consistently achieved the highest accuracy of **87.74%** using the **14 common features in the Shiny app**.  
+
+📌 **AUC Scores:**  
+- **Random Forest (Before Feature Selection):** **0.91**  
+- **Random Forest (Shiny App - 14 common features):** **0.959** (+0.04 improvement)  
+
+## 🖥️ Shiny App  
+A **Shiny app** was developed to predict whether an insurance claim is **Fraudulent** or **Not Fraudulent** using the **14 common features**. The app utilizes the **Random Forest model**, achieving **high accuracy and AUC value of 0.959**.  
+
 
 ## 🚀 Installation & Setup  
 
