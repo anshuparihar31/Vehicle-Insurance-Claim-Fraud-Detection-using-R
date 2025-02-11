@@ -4,7 +4,7 @@
 Vehicle insurance fraud occurs when individuals collaborate to deceive or overstate the extent of damage or injuries resulting from a car accident. This project utilizes **machine learning techniques** to detect fraudulent claims effectively.
 
 ## 📂 Dataset  
-📌 **Source:** [Kaggle](https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection)
+📌 **Source:** [Kaggle](https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection)__
 📌 **Total Rows:** 15,420  
 📌 **Total Columns:** 33  
 📌 **Numeric Features:** Age, Repnumber, Deductible, DriverRating  
