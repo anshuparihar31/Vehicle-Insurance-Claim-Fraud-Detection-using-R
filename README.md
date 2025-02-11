@@ -8,7 +8,12 @@ Vehicle insurance fraud occurs when individuals collaborate to deceive or overst
 📌 **Total Rows:** 15,420  
 📌 **Total Columns:** 33  
 📌 **Numeric Features:** Age, Repnumber, Deductible, DriverRating  
-📌 **Target Variable:** `FraudFound_P` (0 = No Fraud, 1 = Fraud)  
+📌 **Target Variable:** `FraudFound_P` (0 = No Fraud, 1 = Fraud) 
+📌 **Link:**
+ ```sh
+  https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection
+```
+
 
 ## 🛠 Data Preprocessing  
 ✔️ **Categorical Encoding:** Categorical variables are encoded as factors.  
